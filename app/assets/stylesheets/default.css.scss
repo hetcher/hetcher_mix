@@ -115,8 +115,9 @@ body {
 	}
 }
 
+//= depend_on_asset "podcasts_banner.jpg"
 .podcasts_banner {
-		background-image: url(../images/podcasts_banner.jpg);
+		background-image: url('<%= asset_path("podcasts_banner.jpg") %> ');;
 }
 
 .sign_in_banner {
