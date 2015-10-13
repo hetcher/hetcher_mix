@@ -1,0 +1,105 @@
+<div id="podcast_show">
+	<div id="show_banner">
+		<div class="wrapper_skinny">
+			<h1><%= @podcast.title %></h1>
+			<p class="description">
+				<%= @podcast.description %>
+			</p>
+			<% unless @podcast.itunes.blank? %>
+			<a href="<%= @podcast.itunes %>" class="subscribe_link">iTunes</a>
+			<% end %>
+			<% unless @podcast.spotify.blank? %>
+			<a href="<%= @podcast.itunes %>" class="subscribe_link">Spotify</a>
+			<% end %>
+			<% unless @podcast.soundcloud.blank? %>
+			<a href="<%= @podcast.itunes %>" class="subscribe_link">Soundcloud</a>
+			<% end %>
+		</div>
+	</div>
+
+	<div id="breadcrumb">
+		<%= link_to podcasts_path do %>
+			All Podcasts
+			<span>/</span>
+			A Stato Of Trance Podcast
+		<% end %>
+	</div>
+
+	<div id="episodes">
+		<div class="wrapper_skinny">
+			<ul class="cf">
+				<li class="cf">
+					<div class="episode_thumbnail">
+						<a href="episode.html">
+							<img src="images/trance summer.png" alt="trance summer">
+						</a>
+					</div>
+					<div class="episode_overview">
+						<h2><a href="episode.html">A brand new ASOT Festival destination</a></h2>
+						<p class="description">We all experienced some of the most unforgettable 
+							moments with the A State Of Trance events, with the 
+							next one getting closer ...</p>
+						</div>
+					</li>
+					<li class="cf">
+						<div class="episode_thumbnail">
+							<a href="episode.html">
+								<img src="images/trance summer.png" alt="trance summer">
+							</a>
+						</div>
+						<div class="episode_overview">
+							<h2><a href="episode.html">A brand new ASOT Festival destination</a></h2>
+							<p class="description">We all experienced some of the most unforgettable 
+								moments with the A State Of Trance events, with the 
+								next one getting closer ...</p>
+							</div>
+						</li>
+						<li class="cf">
+							<div class="episode_thumbnail">
+								<a href="episode.html">
+									<img src="images/trance summer.png" alt="trance summer">
+								</a>
+							</div>
+							<div class="episode_overview">
+								<h2><a href="episode.html">A brand new ASOT Festival destination</a></h2>
+								<p class="description">We all experienced some of the most unforgettable 
+									moments with the A State Of Trance events, with the 
+									next one getting closer ...</p>
+								</div>
+							</li>
+							<li class="cf">
+								<div class="episode_thumbnail">
+									<a href="episode.html">
+										<img src="images/trance summer.png" alt="trance summer">
+									</a>
+								</div>
+								<div class="episode_overview">
+									<h2><a href="episode.html">A brand new ASOT Festival destination</a></h2>
+									<p class="description">We all experienced some of the most unforgettable 
+										moments with the A State Of Trance events, with the 
+										next one getting closer ...</p>
+									</div>
+								</li>
+								<li class="cf">
+									<div class="episode_thumbnail">
+										<a href="episode.html">
+											<img src="images/trance summer.png" alt="trance summer">
+										</a>
+									</div>
+									<div class="episode_overview">
+										<h2><a href="episode.html">A brand new ASOT Festival destination</a></h2>
+										<p class="description">We all experienced some of the most unforgettable 
+											moments with the A State Of Trance events, with the 
+											next one getting closer ...</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="pagination">
+						<span class="previous_page disabled">Previous</span>
+						<em class="current">1</em>
+						<a href="#">2</a>
+						<a href="#" class="next_page">Next</a>
+					</div>
