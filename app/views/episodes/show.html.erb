@@ -21,8 +21,18 @@
 		<%= link_to podcasts_path do %>
 		All Podcasts
 		<span>/</span>
-		A Stato Of Trance Podcast
+		<%= link_to @podcast.title, podcast_path(@podcast) %>
+		<span>/</span>
+		<%= @episode.title %>
 		<% end %>
+	</div>
+
+	<div id="episode_content">
+		<div class="wrapper_skinny">
+			<img src="images/trance summer.png" alt="trance summer">
+			<h2><%= @episode.title %></h2>
+			<p class="description"><%= @episode.description %></p>
+		</div>
 	</div>
 
 	<div id="episodes">
@@ -31,7 +41,7 @@
 				<% @episodes.each do |episode| %>
 				<li class="cf">
 					<div class="episode_thumbnail">
-						<a href="#">
+						<a href="episode.html">
 							<img src="images/trance summer.png" alt="trance summer">
 						</a>
 					</div>
@@ -42,7 +52,7 @@
 						</p>
 					</div>
 				</li>
-				<% end %>	
+				<% end %>
 			</ul>
 		</div>
 	</div>
