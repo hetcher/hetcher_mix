@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'compass'
 ruby '2.1.5'
 gem 'rails', '4.2.0'
 gem 'sass-rails', '~> 5.0'
