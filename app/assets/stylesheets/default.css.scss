@@ -13,7 +13,7 @@ body {
 }
 
 .wrapprt {
-	wifth: 80%;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -47,7 +47,7 @@ body {
 	background: $highlight;
 	transition: background .4s ease-in-out;
 	&:hover {
-	background: darken($highlight, 7.5%);
+		background: darken($highlight, 7.5%);
 	}
 }
 
@@ -56,7 +56,7 @@ body {
 	color: $dark;
 	transition: background .4s ease-in-out;
 	&:hover {
-	background: darken($white, 7.5%);
+		background: darken($white, 7.5%);
 	}
 }
 
