@@ -36,8 +36,13 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
+
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
    config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+   #Paperclip.options[:command_path] = 'C:\Program Files\GnuWin32\bin'
+   #Paperclip.options[:command_path] = 'C:\Program Files\ImageMagick-6.4.7-Q16'
+   Paperclip.options[:command_path] = 'C:\wamp\bin\apache\ImageMagick-6.9.2-Q16'
    
 end
